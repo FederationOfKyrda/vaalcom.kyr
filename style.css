@@ -1,0 +1,120 @@
+body {
+    background-image: url("Images/wallpaper1.png");
+}
+
+.main-div {
+    width: 1000px;
+    height: 1000px;
+    background: rgba(131, 131, 131, 0.425);
+    color: #E9E2AE;
+    border: 10%;
+    border-radius: 10%;
+    font-family: 'Impact', sans-serif;
+}
+
+.info-div {
+    width: 700px;
+    height: 700px;
+    background: rgb(216, 216, 216);
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    border-color: rgb(216, 216, 216);
+}
+
+/* small space of useless text here because i feel i'm gonna get lost in the css */
+/* below is the coloring for the a aka href */
+
+a:link {
+  color: #E9E2AE;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E9E2AE;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* above is the coloring for the a aka href */
+
+.big-text {
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.medium-text {
+    font-size: 10px;
+}
+
+.small-text {
+    font-size: 5px;
+    white-space: nowrap;
+}
+
+.no-wrap-ffs {
+    white-space: nowrap;
+}
+
+.container {
+  display: flex;        /* reminder : puts items side by side */
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap; /* so it doesnt wraps my text when theres an image next to it */
+}
+
+.container2 {
+  display: flex;        /* reminder : puts items side by side */
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap; /* so it doesnt wraps my text when theres an image next to it */
+  font-family: 'Impact', sans-serif;
+}
+
+.container3 {
+  gap: 10px;
+  font-family: 'Impact', sans-serif;
+}
+
+/* now this is for the crt monitor filter effect btw : */
+
+  html { /* This is for the letters effect */
+         padding: 1em;
+         color: #eee;
+         font-size: 1em;
+         line-height: 1;
+         text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+         letter-spacing: 0.125em;
+         animation-duration: 0.01s;
+         animation-name: textflicker;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+  }
+
+  @keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+  }
+
+.scanLines {
+    background: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 1px, rgba(0,0,0,0.25) 5px, rgba(0,0,0,0.25) 2px);
+    background: -moz-repeating-linear-gradient(top, transparent 0px, transparent 1px, rgba(0,0,0,0.25) 5px, rgba(0,0,0,0.25) 2p);
+}
+
